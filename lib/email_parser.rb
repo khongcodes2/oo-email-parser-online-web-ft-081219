@@ -4,6 +4,10 @@
 # or whitespace (' ').
 class EmailParser
   
-  def initialize(unformatted_e)
+  def
+  end
+  
+  def self.parse
+  end
   
 end
