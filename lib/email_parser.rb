@@ -16,8 +16,8 @@ class EmailAddressParser
     self.class.input = unformatted_e
   end
   
-  def self.parse
-    self.input.split(", ")
+  def parse
+    self.class.input.split(", ")
   end
   
 end
