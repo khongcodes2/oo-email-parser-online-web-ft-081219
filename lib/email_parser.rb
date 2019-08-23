@@ -13,7 +13,7 @@ class EmailAddressParser
   end
   
   def initialize(unformatted_e)
-    self.input = unformatted_e
+    self.class.input = unformatted_e
   end
   
   def self.parse
