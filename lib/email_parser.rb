@@ -2,14 +2,22 @@
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
-class EmailParser
+class EmailAddressParser
   
+  def self.input
+    @@input
+  end
+  
+  def self.input=(input)
+    @@input = input
+  end
   
   def initialize(unformatted_e)
-    
+    self.input = unformatted_e
   end
   
   def self.parse
+    self.input.split(", ")
   end
   
 end
