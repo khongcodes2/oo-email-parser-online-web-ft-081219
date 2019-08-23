@@ -17,7 +17,7 @@ class EmailAddressParser
   end
   
   def parse
-    self.class.input.split(" ").map {|d|d.chomp(",")}
+    self.class.input.split(" ").map {|d|d.chomp(",")}.uniq
     
     
   end
